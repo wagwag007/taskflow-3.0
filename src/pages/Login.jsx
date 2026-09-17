@@ -14,6 +14,7 @@ function Login({ onLogin }) {
     event.preventDefault();
 
     if (usuario === 'wagner' && senha === '123456') {
+      localStorage.setItem('token', 'token-de-desenvolvimento');
       onLogin(usuario);
       navigate('/dashboard');
       return;

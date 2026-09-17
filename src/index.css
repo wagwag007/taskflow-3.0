@@ -4,7 +4,9 @@
   padding: 0;
 }
 body {
-  background-color: #0D1B2A;
+  background:
+    radial-gradient(circle at 85% 0%, rgba(59, 130, 246, 0.14), transparent 32rem),
+    #0D1B2A;
   color: white;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
@@ -15,9 +17,8 @@ body {
 }
 
 .container {
-  max-width: 680px;
+  width: min(100% - 40px, 1240px);
   margin: 0 auto;
-  padding: 0 16px;
 }
 
 header {
@@ -38,7 +39,7 @@ header .container {
 }
 
 .logo h1 {
-  color: #A78BFA;
+  color: #7DD3FC;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.2;
@@ -67,13 +68,13 @@ header .container {
 
 /* ── 6. MAIN ──────────────────────────────────────────────── */
 main {
-  padding: 28px 0;
+  padding: 36px 0 52px;
   flex: 1;
 }
 
 /* ── 7. FORMULÁRIO ────────────────────────────────────────── */
 #formulario {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .campo-linha {
@@ -116,8 +117,8 @@ main {
 }
 
 #input-cep:focus {
-  border-color: #8B5CF6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+  border-color: #0EA5A4;
+  box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.15);
 }
 
 .cep-info,
@@ -136,8 +137,8 @@ main {
 }
 
 #input-tarefa:focus {
-  border-color: #8B5CF6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+  border-color: #0EA5A4;
+  box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.15);
 }
 
 #sel-prioridade {
@@ -154,37 +155,37 @@ main {
 }
 
 #sel-prioridade:focus {
-  border-color: #8B5CF6;
+  border-color: #0EA5A4;
 }
 
 #btn-adicionar {
-  padding: 10px 22px;
-  background-color: #8B5CF6;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #2563EB, #0EA5A4);
   color: #FFFFFF;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.25);
+  box-shadow: 0 8px 20px rgba(14, 165, 164, 0.2);
   white-space: nowrap;
 }
 
 #btn-adicionar:hover {
-  background-color: #7C3AED;
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, #1D4ED8, #0F766E);
+  box-shadow: 0 10px 24px rgba(14, 165, 164, 0.3);
 }
 
 #btn-adicionar:active {
-  background-color: #6D28D9;
+  background: #1D4ED8;
   transform: scale(0.97);
   box-shadow: none;
 }
 
 #btn-adicionar:focus {
-  outline: 2px solid #A78BFA;
+  outline: 2px solid #7DD3FC;
   outline-offset: 2px;
 }
 
@@ -222,7 +223,7 @@ main {
 
 /* Prioridades — cor da borda esquerda */
 .tarefa.alta   { border-left-color: #EF4444; }
-.tarefa.media  { border-left-color: #8B5CF6; }
+.tarefa.media  { border-left-color: #0EA5A4; }
 .tarefa.baixa  { border-left-color: #22C55E; }
 
 /* Estado concluída */
@@ -257,7 +258,7 @@ main {
 }
 
 .badge-alta    { background-color: rgba(239, 68, 68, 0.85); color: #FFFFFF; }
-.badge-media   { background-color: rgba(139, 92, 246, 0.85); color: #FFFFFF; }
+.badge-media   { background-color: rgba(14, 165, 164, 0.85); color: #FFFFFF; }
 .badge-baixa   { background-color: rgba(34, 197, 94, 0.85); color: #FFFFFF; }
 
 /* ── 13. BOTÃO DELETAR ────────────────────────────────────── */

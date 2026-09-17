@@ -12,7 +12,7 @@
 }
 
 .brand {
-  color: #A78BFA;
+  color: #7DD3FC;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -35,12 +35,12 @@
 }
 
 .navList a:hover {
-  background: rgba(139, 92, 246, 0.12);
-  color: #A78BFA;
+  background: rgba(14, 165, 164, 0.12);
+  color: #7DD3FC;
 }
 
 .active {
-  background: #8B5CF6;
+  background: #0EA5A4;
   color: #FFFFFF;
   font-weight: 700;
 }
@@ -50,7 +50,7 @@
   border: none;
   border-radius: 12px;
   padding: 12px 16px;
-  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #0F766E 100%);
   color: #ffffff;
   font-weight: 700;
   cursor: pointer;

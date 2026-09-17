@@ -1,11 +1,11 @@
 :root {
-  --accent: #a78bfa;
-  --accent-bg: rgba(139, 92, 246, 0.12);
-  --accent-border: #8b5cf6;
-  --border: #331d56;
+  --accent: #7dd3fc;
+  --accent-bg: rgba(14, 165, 164, 0.12);
+  --accent-border: #0ea5a4;
+  --border: #1e3a5f;
   --text-h: #f1f5f9;
-  --social-bg: #180e29;
-  --shadow: 0 4px 16px rgba(139, 92, 246, 0.2);
+  --social-bg: #122136;
+  --shadow: 0 4px 16px rgba(14, 165, 164, 0.2);
 }
 
 .counter {
@@ -212,5 +212,6 @@
 
 @media (max-width: 768px) {
   .app-root { flex-direction: column; }
-  .app-main { padding: 16px; }
+  .app-main { padding: 16px 0; }
+  .container { width: min(100% - 24px, 1240px); }
 }

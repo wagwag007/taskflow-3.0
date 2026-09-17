@@ -1,16 +1,30 @@
 import "../App.css";
 import Header from "../Componentes/Header";
 import ListaTarefas from "../Componentes/ListaTarefas";
-import Contador from "../Componentes/Contador";
 import ModalTarefa from "../Componentes/ModalTarefa";
-import { useState } from "react";
-import Login from "./Login";
+import api from "../api";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [tarefas, setTarefas] = useState([]);
+  const [erro, setErro] = useState('');
   const [proximaId, setProximaId] = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
   const [editingTask, setEditingTask] = useState(null);
+
+  useEffect(() => {
+    const carregarTarefas = async () => {
+      try {
+        const response = await api.get('/tarefas');
+        setTarefas(response.data);
+        setErro('');
+      } catch {
+        setErro('Erro ao carregar tarefas');
+      }
+    };
+
+    carregarTarefas();
+  }, []);
 
   const abrirCriar = () => {
     setEditingTask(null);
@@ -69,6 +83,7 @@ export default function Home() {
         </section>
 
         <ListaTarefas tarefas={tarefas} onDeletar={deletarTarefa} onConcluir={alternarConcluida} onEditar={abrirEditar} />
+        {erro && <p role="alert">{erro}</p>}
 
         <ModalTarefa
           isOpen={modalOpen}

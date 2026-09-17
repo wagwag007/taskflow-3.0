@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.15), transparent 35%),
+  background: radial-gradient(circle at top left, rgba(14, 165, 164, 0.15), transparent 35%),
     #0d1b2a;
   padding: 24px;
 }
@@ -20,7 +20,7 @@
 
 .login-form h2 {
   margin-bottom: 24px;
-  color: #a78bfa;
+  color: #7dd3fc;
   font-size: 1.9rem;
   text-align: center;
 }
@@ -46,8 +46,8 @@
 }
 
 .login-form input:focus {
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2);
+  border-color: #0ea5a4;
+  box-shadow: 0 0 0 4px rgba(14, 165, 164, 0.2);
 }
 
 .login-error {
@@ -63,7 +63,7 @@
   width: 100%;
   margin-top: 8px;
   padding: 14px 18px;
-  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #0f766e 100%);
   color: #ffffff;
   border: none;
   border-radius: 12px;

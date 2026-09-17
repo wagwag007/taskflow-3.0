@@ -67,7 +67,7 @@
 }
 
 .saveBtn {
-  background: #8B5CF6;
+  background: #0EA5A4;
   color: #FFFFFF;
   border: none;
   padding: 8px 14px;
@@ -78,7 +78,7 @@
 }
 
 .saveBtn:hover {
-  background: #7C3AED;
+  background: #0F766E;
 }
 
 .cancelBtn {
