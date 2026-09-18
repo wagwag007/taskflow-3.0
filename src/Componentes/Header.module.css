@@ -1,12 +1,12 @@
 header {
-  background: rgba(27, 42, 59, 0.86);
-  border-bottom: 1px solid rgba(96, 165, 250, 0.2);
-  padding: 26px 0;
+  background: linear-gradient(180deg, rgba(18, 40, 58, 0.94), rgba(18, 40, 58, 0.68));
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  padding: 28px 0 24px;
   position: sticky;
   top: 0;
   z-index: 10;
   text-align: left;
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(18px);
 }
 
 header .container {
@@ -26,15 +26,16 @@ header .container {
 
 .logo h1 {
   color: #F8FAFC;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
   line-height: 1.2;
   margin: 0;
   pointer-events: auto;
 }
 
 .logo p {
-  color: #7DD3FC;
+  color: #91a4b7;
   font-size: 0.9rem;
   margin: 0;
 }

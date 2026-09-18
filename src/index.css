@@ -3,12 +3,37 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --page-bg: #081521;
+  --panel-bg: #0e2030;
+  --text-main: #f1f5f9;
+  --text-muted: #91a4b7;
+  --teal: #2dd4bf;
+  --blue: #60a5fa;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
 body {
   background:
-    radial-gradient(circle at 85% 0%, rgba(59, 130, 246, 0.14), transparent 32rem),
-    #0D1B2A;
-  color: white;
-  font-family: 'Inter', Arial, sans-serif;
+    radial-gradient(circle at 82% -10%, rgba(45, 212, 191, 0.13), transparent 28rem),
+    radial-gradient(circle at 10% 100%, rgba(37, 99, 235, 0.10), transparent 30rem),
+    var(--page-bg);
+  color: var(--text-main);
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
@@ -22,12 +47,13 @@ body {
 }
 
 header {
-  background-color: #1B2A3B;
-  border-bottom: 1px solid #1E3A5F;
-  padding: 20px 0;
+  background: linear-gradient(180deg, rgba(18, 40, 58, 0.94), rgba(18, 40, 58, 0.68));
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  padding: 28px 0 24px;
   position: sticky;
   top: 0;
   z-index: 10;
+  backdrop-filter: blur(18px);
 }
 
 header .container {
@@ -39,9 +65,10 @@ header .container {
 }
 
 .logo h1 {
-  color: #7DD3FC;
-  font-size: 1.6rem;
-  font-weight: 700;
+  color: var(--text-main);
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  letter-spacing: -0.03em;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -68,7 +95,7 @@ header .container {
 
 /* ── 6. MAIN ──────────────────────────────────────────────── */
 main {
-  padding: 36px 0 52px;
+  padding: 34px 0 52px;
   flex: 1;
 }
 

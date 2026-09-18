@@ -199,19 +199,20 @@
 .app-root {
   display: flex;
   min-height: 100vh;
-  background-color: #0f091f;
+  background-color: var(--page-bg);
   color: var(--text-h);
 }
 
 .app-main {
   flex: 1 1 auto;
-  padding: 24px;
+  min-width: 0;
+  padding: 0 32px;
   box-sizing: border-box;
   background: transparent;
 }
 
 @media (max-width: 768px) {
   .app-root { flex-direction: column; }
-  .app-main { padding: 16px 0; }
+  .app-main { padding: 0 18px; }
   .container { width: min(100% - 24px, 1240px); }
 }

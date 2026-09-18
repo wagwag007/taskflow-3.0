@@ -1,20 +1,35 @@
 .sidebar {
-  width: 220px;
-  background: #0F2230;
-  border-right: 1px solid #1E3A5F;
+  width: 236px;
+  background: rgba(8, 21, 33, 0.9);
+  border-right: 1px solid rgba(148, 163, 184, 0.14);
   color: #DDE7EF;
-  padding: 20px 16px;
+  padding: 28px 18px 20px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 32px;
   min-height: 100vh;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
 
 .brand {
   color: #7DD3FC;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.04em;
+  padding: 0 10px;
+}
+
+.brand::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #2dd4bf, #60a5fa);
 }
 
 .navList {
@@ -29,20 +44,23 @@
 .navList a {
   color: #94A3B8;
   text-decoration: none;
-  padding: 10px 12px;
-  border-radius: 8px;
+  padding: 12px 14px;
+  border-radius: 10px;
   display: block;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .navList a:hover {
   background: rgba(14, 165, 164, 0.12);
   color: #7DD3FC;
+  transform: translateX(2px);
 }
 
 .active {
-  background: #0EA5A4;
+  background: linear-gradient(100deg, rgba(45, 212, 191, 0.22), rgba(96, 165, 250, 0.12));
   color: #FFFFFF;
   font-weight: 700;
+  box-shadow: inset 3px 0 #2dd4bf;
 }
 
 .logoutButton {
@@ -73,6 +91,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 14px 18px;
+    gap: 12px;
+    position: relative;
   }
   .navList {
     flex-direction: row;

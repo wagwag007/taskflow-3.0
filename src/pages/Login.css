@@ -3,42 +3,55 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at top left, rgba(14, 165, 164, 0.15), transparent 35%),
-    #0d1b2a;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(45, 212, 191, 0.17), transparent 28rem),
+    radial-gradient(circle at 90% 88%, rgba(37, 99, 235, 0.14), transparent 26rem),
+    #081521;
   padding: 24px;
 }
 
 .login-form {
-  width: min(420px, 100%);
-  background: #122235;
-  border: 1px solid #1e3a5f;
-  border-radius: 18px;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
-  padding: 32px 28px;
+  width: min(430px, 100%);
+  background: linear-gradient(145deg, rgba(25, 55, 75, 0.94), rgba(12, 29, 44, 0.98));
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+  padding: 38px 32px 34px;
   color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-form::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #2dd4bf, #60a5fa);
 }
 
 .login-form h2 {
-  margin-bottom: 24px;
-  color: #7dd3fc;
-  font-size: 1.9rem;
-  text-align: center;
+  margin-bottom: 30px;
+  color: #f8fafc;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  text-align: left;
 }
 
 .login-form label {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   font-size: 0.95rem;
   color: #cbd5e1;
 }
 
 .login-form input {
   width: 100%;
-  margin-top: 8px;
+  margin-top: 9px;
   padding: 12px 14px;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  background: #0f2230;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 10px;
+  background: rgba(5, 18, 29, 0.58);
   color: #f8fafc;
   font-size: 1rem;
   outline: none;
@@ -46,8 +59,8 @@
 }
 
 .login-form input:focus {
-  border-color: #0ea5a4;
-  box-shadow: 0 0 0 4px rgba(14, 165, 164, 0.2);
+  border-color: #2dd4bf;
+  box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.14);
 }
 
 .login-error {
@@ -61,12 +74,12 @@
 
 .login-form button {
   width: 100%;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 14px 18px;
-  background: linear-gradient(135deg, #2563eb 0%, #0f766e 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #0ea5a4 100%);
   color: #ffffff;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
