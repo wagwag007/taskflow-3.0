@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import PrivateRoute from "./Componentes/PrivateRoute";
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -24,14 +24,7 @@ function App() {
       />
       <div className="app-main">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <PrivateRoute isAuthenticated={isAuthenticated}>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
+          <Route path="/" element={<Navigate to="/login" replace />} />
           <Route
             path="/dashboard"
             element={
